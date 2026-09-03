@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Application Submitted - HireFlow</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7f9;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .success-box {
+            background: white;
+            width: 500px;
+            margin: auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #198754;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #0d6efd;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="success-box">
+
+        <h1>🎉 Application Submitted!</h1>
+
+        <p>
+            Your application for
+            <strong>{{ job.title }}</strong>
+            has been submitted successfully.
+        </p>
+
+        <p>Thank you for applying through HireFlow.</p>
+
+        <a href="{% url 'home' %}" class="btn">
+            Back to Jobs
+        </a>
+
+    </div>
+
+</body>
+</html>

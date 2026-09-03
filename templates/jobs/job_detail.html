@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ job.title }}</title>
+</head>
+
+<body>
+
+    <h1>{{ job.title }}</h1>
+
+    <h2>{{ job.company }}</h2>
+
+    <p><strong>Location:</strong> {{ job.location }}</p>
+
+    <p><strong>Salary:</strong> {{ job.salary }}</p>
+
+    <h3>Job Description</h3>
+    <p>{{ job.description }}</p>
+
+    <h3>Skills Required</h3>
+    <p>{{ job.skills }}</p>
+
+    <a href="{% url 'apply' job.id %}">
+        <button>Apply Now</button>
+    </a>
+
+</body>
+</html>
