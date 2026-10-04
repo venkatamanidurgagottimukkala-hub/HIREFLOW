@@ -1,10 +1,33 @@
-*.sqlite3
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+Scripts/
+
+# Django
 db.sqlite3
 
-media/
-__pycache__/
-*.pyc
+# Static files
+staticfiles/
 
+# User uploaded files
+media/
+
+# Environment variables
 .env
-venv/
-.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Personal PDF files
+*.pdf
+
+# OS
+.DS_Store
+Thumbs.db
