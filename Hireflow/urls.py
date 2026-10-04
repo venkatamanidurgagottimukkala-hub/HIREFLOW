@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 from Jobs.views import *
 
 urlpatterns = [
+    path('', home, name='root'),
     path('admin/', admin.site.urls),
     path('home/', home, name='home'),
     path('job/<int:job_id>/', job_detail, name='job_detail'),
